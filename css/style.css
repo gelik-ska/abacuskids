@@ -62,7 +62,7 @@ background-size: 35%,100%;
 
 .button--empty {
   background-image: none;
-  border: 2px solid rgb(233, 49, 49);
+  border: 2px solid #612d79c9;
   background-size: 100% 2px;
   background-position: 0 100%, 0 0;
   background-repeat: no-repeat;
@@ -70,14 +70,14 @@ background-size: 35%,100%;
 }
 
 .button--empty span {
-  background-color: #e62e2e;
+  background-color: #612d79c9;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .button--empty:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 24px #df6363;
+  box-shadow: 0 0 24px #c553c5;
 }
 
 .logo {}
@@ -214,7 +214,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__top-btn {
-  padding: 0 60px;
+  padding: 0 30px;
 }
 
 
@@ -260,7 +260,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__play:hover svg {
-  box-shadow: 0 0 24px #e65151;
+  box-shadow: 0 0 24px #e65151b6;
   transform: scale(1.05);
 }
 
@@ -272,7 +272,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   max-width: 600px;
   margin-bottom: 30px;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #800015;
+  text-shadow: 1px 1px 2px #660080;
 
 }
 
@@ -282,7 +282,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  color: #414141;
+  color: #504c4cdc;
 }
 
 .header__content-buttons {
@@ -291,6 +291,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__content-btn {
   margin-right: 24px;
+  font-weight: 900;
 }
 
 .header__img {
@@ -592,7 +593,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .testimonials__slide {
-  padding: 64px;
+  padding: 45px;
   background-color: #fff;
   border-radius: 4px;
 }
@@ -741,6 +742,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   transition: all .3s;
 }
 
+.video__inner {
+  display: flex;
+  justify-content: center;
+}
 
 /* ============================== QUESTIONS ============================== */
 /* ============================== QUESTIONS ============================== */
