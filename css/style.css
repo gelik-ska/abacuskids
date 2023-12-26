@@ -7,6 +7,8 @@ html, body {
 
 }
 
+
+
 .heading__title{
    font-family: 'Manrope', sans-serif;
 }
@@ -32,7 +34,7 @@ html, body {
   padding: 100px 0;
 }
 
-.main__directions {
+.main__invention {
   padding: 150px 0;
 }
 
@@ -66,7 +68,7 @@ background-size: 35%,100%;
 
 .button--empty {
   background-image: none;
-  border: 2px solid rgb(233, 49, 49);
+  border: 2px solid #612d79c9;
   background-size: 100% 2px;
   background-position: 0 100%, 0 0;
   background-repeat: no-repeat;
@@ -74,14 +76,14 @@ background-size: 35%,100%;
 }
 
 .button--empty span {
-  background-color: #e62e2e;
+  background-color: #612d79c9;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .button--empty:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 24px #df6363;
+  box-shadow: 0 0 24px #c553c5;
 }
 
 .logo {}
@@ -218,7 +220,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__top-btn {
-  padding: 0 60px;
+  padding: 0 30px;
 }
 
 
@@ -230,6 +232,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   /* margin: 40px 0 50px; */
   background-image: url("../images/pic/luxa.org-opacity-changed-palkin2.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .header__body-inner {
@@ -264,7 +267,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__play:hover svg {
-  box-shadow: 0 0 24px #e65151;
+  box-shadow: 0 0 24px #e65151b6;
   transform: scale(1.05);
 }
 
@@ -276,7 +279,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   max-width: 600px;
   margin-bottom: 30px;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #800015;
+  text-shadow: 1px 1px 2px #660080;
 
 }
 
@@ -286,7 +289,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
-  color: #414141;
+  color: #504c4cdc;
 }
 
 .header__content-buttons {
@@ -295,6 +298,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__content-btn {
   margin-right: 24px;
+  font-weight: 900;
 }
 
 .header__img {
@@ -499,40 +503,40 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 
-/* ============================== DIRECTIONS ============================== */
-/* ============================== DIRECTIONS ============================== */
-.directions {
+/* ============================== aboutinvention ============================== */
+/* ============================== aboutinvention ============================== */
+.aboutinvention {
   background-color: #753e7517;
 }
-.directions__inner {
+.invention__inner {
   position: relative;
 }
 
 
-.directions__heading {
+.invention__heading {
   margin-bottom: 150px;
 }
 
-.directions__list {
+.invention__list {
   display: grid;
   grid-template: repeat(2, auto) / repeat(2, 1fr);
   gap: 50px;
   grid-column-gap: 150px;
 }
 
-.directions__image-box img {
+.invention__image-box img {
   width: 100%;
   height: 100%;
 }
 
-.directions__link-content {
+.invention__link-content {
   padding: 24px;
   display: flex;
   flex-direction: column;
 }
 
 
-.directions__link-text {
+.invention__link-text {
   margin-bottom: 26px;
   font-weight: 400;
   font-size: 25px;
@@ -541,7 +545,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-top: 20px;
 }
 
-.directions__tittle {
+.invention__tittle {
   font-weight: 700;
   font-size: 30px;
   line-height: 110%;
@@ -550,7 +554,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   justify-content: center;
   margin-top: 90px;
 }
-.directions__tittle:last-child {
+.invention__tittle:last-child {
   margin-top: 230px;
   margin-right: 40px;
 }
@@ -595,7 +599,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .testimonials__slide {
-  padding: 64px;
+  padding: 45px;
   background-color: #fff;
   border-radius: 4px;
 }
@@ -744,6 +748,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   transition: all .3s;
 }
 
+.video__inner {
+  display: flex;
+  justify-content: center;
+}
 
 /* ============================== QUESTIONS ============================== */
 /* ============================== QUESTIONS ============================== */
@@ -834,11 +842,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .questions__form-default:checked+.questions__form-custom {
-  background: url("../images/icons/check.svg") 50% 50% no-repeat, #FF3F3A;
-  border: 1px solid #FF3F3A;
+  background: url("../images/icon/check.svg") 50% 50% no-repeat;
+  border: 1px solid #612d79c9;
 }
 .questions__form-radio:checked+span {
-  background: url("../images/icons/check.svg") 50% 50% no-repeat, #FF3F3A;
+  background: url("../images/icon/check.svg") 50% 50% no-repeat;
   color: #50B848;
 }
 .questions__form-custom {
@@ -1280,15 +1288,15 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
   /* ----------------------------------- */
-  .directions__filter-item {
+  .invention__filter-item {
     margin-right: 10px;
   }
 
-  .directions__list {
+  .invention__list {
     gap: 30px 10px;
   }
 
-  .directions__link-content {
+  .invention__link-content {
     padding: 24px 5px 5px;
   }
 
@@ -1324,7 +1332,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .directions__list {
+  .invention__list {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
 
@@ -1362,7 +1370,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     padding: 60px 0 100px;
   }
 
-  .main__directions,
+  .main__invention,
   .main__testimonials {
     padding-bottom: 100px;
   }
@@ -1396,11 +1404,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .directions__list {
+  .invention__list {
     grid-template: none;
   }
 
-  .directions__list-item--empty {
+  .invention__list-item--empty {
     display: none;
   }
 
@@ -1507,7 +1515,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .directions__filter-box {
+  .invention__filter-box {
     margin-bottom: 15px;
   }
 }
