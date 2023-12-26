@@ -2,9 +2,13 @@
 /* ============================== GLOBAL ============================== */
 
 html, body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #424551;
 
+}
+
+.heading__title{
+   font-family: 'Manrope', sans-serif;
 }
 
 .wrapper {
@@ -25,7 +29,7 @@ html, body {
 }
 
 .main__about {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .main__directions {
@@ -62,7 +66,7 @@ background-size: 35%,100%;
 
 .button--empty {
   background-image: none;
-  border: 2px solid rgb(233, 49, 49);
+  border: 2px solid #612d79c9;
   background-size: 100% 2px;
   background-position: 0 100%, 0 0;
   background-repeat: no-repeat;
@@ -70,14 +74,14 @@ background-size: 35%,100%;
 }
 
 .button--empty span {
-  background-color: #e62e2e;
+  background-color: #612d79c9;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .button--empty:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 24px #df6363;
+  box-shadow: 0 0 24px #c553c5;
 }
 
 .logo {}
@@ -97,7 +101,7 @@ background-size: 35%,100%;
 
 .heading__title {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 130%;
 }
 
@@ -214,7 +218,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__top-btn {
-  padding: 0 60px;
+  padding: 0 30px;
 }
 
 
@@ -260,7 +264,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__play:hover svg {
-  box-shadow: 0 0 24px #e65151;
+  box-shadow: 0 0 24px #e65151b6;
   transform: scale(1.05);
 }
 
@@ -272,17 +276,17 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   max-width: 600px;
   margin-bottom: 30px;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #800015;
+  text-shadow: 1px 1px 2px #660080;
 
 }
 
 .header__text {
-  max-width: 500px;
+  max-width: 400px;
   margin-bottom: 60px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 100%;
-  color: #414141;
+  color: #504c4cdc;
 }
 
 .header__content-buttons {
@@ -291,6 +295,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__content-btn {
   margin-right: 24px;
+  font-weight: 900;
 }
 
 .header__img {
@@ -340,8 +345,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .h2 {
-  font-family: "Barlow", Sans-serif;
-  font-size: 3.5rem; 
+  font-size: 3rem; 
   color: rgba(0, 0, 0, 1);
   font-weight: 400;
   overflow: hidden; /* Предотвращает обрезание текста */
@@ -592,7 +596,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .testimonials__slide {
-  padding: 64px;
+  padding: 45px;
   background-color: #fff;
   border-radius: 4px;
 }
@@ -741,6 +745,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   transition: all .3s;
 }
 
+.video__inner {
+  display: flex;
+  justify-content: center;
+}
 
 /* ============================== QUESTIONS ============================== */
 /* ============================== QUESTIONS ============================== */
@@ -1221,7 +1229,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   /* ----------------------------------- */
 
   .heading__title {
-    font-size: 37px;
+    font-size: 40px;
   }
 
   .about__img {
