@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=M+PLUS+Rounded+1c:wght@400;700&family=Manrope:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -55,6 +56,20 @@
             </nav>
             <div class="header__btn-box">
               <a class="header__top-btn button" href="#questions">Свяжитесь с нами</a>
+              <div class="language">
+                <img
+                  src="images/lang/lang__ru.png"
+                  alt="ru"
+                  data-google-lang="ru"
+                  class="language__img"
+                />
+                <img
+                  src="images/lang/lang__en.png"
+                  alt="en"
+                  data-google-lang="en"
+                  class="language__img"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -73,18 +88,20 @@
                   </svg>
                   Автор об устройстве
                 </a>
+                <div class="banner__text"> 
                 <h1 class="header__title">
                   <i>“AbaсusKids”</i> - электронно-звуковое устройство для детей с инвалидностью
                 </h1>
                 <p class="header__text">Мы разработали инновационное устройство для обучения детей с ОВЗ основам арифметики и ментального счета, аналога которому нет.</p>
                 <div class="header__content-buttons">
-                  <a class="header__content-btn button button--empty" href="#aboutinvention"><span>Подробнее</spaт></a>
+                  <a class="header__content-btn button button--empty" href="#aboutinvention"><span>Подробнее</span></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </header>
     <main class="main">
       <section class="main__about about" id="about">
@@ -187,12 +204,12 @@
                 </li>
                 <li class="mix invention__list-item invention__list-item--marketing" data-order="1">
                   <div class="invention__image-box">
-                    <img src="images/pic/pribor_i_karandashi1.jpg" alt="">
+                    <img src="images/pic/pribor_i_karandashi1.jpg" alt="invention and pencils">
                   </div>    
               </li>
                 <li class="mix invention__list-item invention__list-item--marketing" data-order="1">
                     <div class="invention__image-box">
-                      <img src="images/pic/f9a15099-bc99-4934-8932-ddbb9b581076.png" alt="">
+                      <img src="images/pic/f9a15099-bc99-4934-8932-ddbb9b581076.png" alt="7 Rhombuses with Names, What the Device Develops in children with special needs">
                     </div>    
                 </li>
                 <li class="mix invention__list-item invention__list-item--management" data-order="2">
@@ -225,7 +242,7 @@
               </li>
               <li class="mix invention__list-item invention__list-item--marketing" data-order="1">
                 <div class="invention__image-box">
-                  <img src="images/pic/395bb798-bef2-4c47-a342-4ff1911dc38b.png" alt="">
+                  <img src="images/pic/395bb798-bef2-4c47-a342-4ff1911dc38b.png" alt="7 rhombuses with names for those who choose this device for a child with special needs.">
                 </div>    
             </li>
               </ul>
@@ -235,7 +252,7 @@
       </section>
       
 
-      <section class="main__testimonials testimonials" id="testimonials">
+      <section class="main__testimonials testimonials" id="testimonials" id="testimonials">
         <div class="container">
           <div class="testimonials__inner">
             <div class="testimonials__heading heading heading--text-center">
@@ -347,6 +364,16 @@
                     </div>
                   </div>
                 </div>
+                <div class="testimonials__slide">
+                  <div class=" video__inner">
+                    <video src="./images/video/IMG_7548.mov" width="600px" type="video/mp4" controls></video>
+                  </div>
+              </div>
+              <div class="testimonials__slide">
+                <div class=" video__inner">
+                  <video src="./images/video/IMG_7439.mov" width="600px" type="video/mp4" controls></video>
+                </div>
+            </div>
                 <div class="testimonials__slide">
                   <div class=" video__inner">
                     <video src="./images/video/IMG_7548.mov" width="600px" type="video/mp4" controls></video>
@@ -580,10 +607,12 @@
   </div>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/mixitup.min.js"></script>
-<script src="js/main.js"></script>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./js/jquery.cookie.min.js"></script>
+<script src="./js/element.js"></script>
+<script src="./js/fancybox.umd.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/mixitup.min.js"></script>
+<script src="./js/main.js"></script>
 
 </html>
