@@ -55,7 +55,8 @@
               </ul>
             </nav>
             <div class="header__btn-box">
-              <a class="header__top-btn button" href="#questions">Свяжитесь с нами</a>
+              <a class="header__top-btn button" href="https://wa.me/79603725885" id="whatsappLink" aria-label="Свяжитесь с нами через WhatsApp">Свяжитесь с нами</a>
+
               <div class="language">
                 <img
                   src="images/lang/lang__ru.png"
@@ -94,7 +95,8 @@
                 </h1>
                 <p class="header__text">Мы разработали инновационное устройство для обучения детей с ОВЗ основам арифметики и ментального счета, аналога которому нет.</p>
                 <div class="header__content-buttons">
-                  <a class="header__content-btn button button--empty" href="#aboutinvention"><span>Подробнее</span></a>
+                  <a class="header__content-btn button button--empty" href="#aboutinvention" aria-label="Подробнее о изобретении"><span>Подробнее</span></a>
+
                 </div>
               </div>
             </div>
@@ -462,11 +464,15 @@
                   </label>
                 </div>
                   <div class="questions__form-row">
-                    <label class="questions__form-label label-radio">
-                      <input type="radio" class="questions__form-radio" required name="entity"> Физическое лицо
-                      <input type="radio" class="questions__form-radio" required name="entity"> Юридическое лицо
-                    </label>
-                    <button type="submit" class="questions__form-btn button">Отправить</button>
+                    <div class="questions__form-label label-radio">
+                      <label>
+                        <input type="radio" class="questions__form-radio" required name="entity"> Физическое лицо
+                      </label>
+                      <label>
+                        <input type="radio" class="questions__form-radio" required name="entity"> Юридическое лицо 
+                      </label>
+                    </div>                             
+                    <button type="submit" class="questions__form-btn button" aria-label="Отправить форму">Отправить форму</button>
                   </div>
                 <div class="questions__form-row">
                   <label class="questions__checkbox-label">
