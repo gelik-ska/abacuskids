@@ -8,6 +8,50 @@ html, body {
 }
 
 
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла*/
+
+.page_fix {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Прячем панель гугла */
+
+.skiptranslate {
+  display: none !important;
+}
+
+/* language */
+
+.language {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.language__img {
+  margin: 2px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.language__img:hover,
+.language__img_active {
+  opacity: 1;
+}
+
+
+.banner__text{
+ margin:100px;
+}
 
 .heading__title{
    font-family: 'Manrope', sans-serif;
@@ -29,6 +73,14 @@ html, body {
 .burger {
   display: none;
 }
+
+/* content */
+
+.content {
+  text-align: center;
+  margin: auto;
+}
+
 
 .main__about {
   padding: 100px 0;
@@ -105,6 +157,7 @@ background-size: 35%,100%;
   font-weight: 900;
   font-size: 40px;
   line-height: 130%;
+  font-family: "Manrope", sans-serif;
 }
 
 .heading--text-center {
@@ -821,7 +874,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-right: 50px;
   display: flex;
   width: 100%;
-  text-align: center;
 }
 
 .questions__form-checkbox {
@@ -1519,3 +1571,34 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     margin-bottom: 15px;
   }
 }
+
+@media (max-width: 480px) {
+  .header__body {
+    background-size: cover;
+  }
+
+  .header__title {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .header__text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header__content-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__content-btn {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+   }
