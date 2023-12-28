@@ -1546,6 +1546,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   padding-left: 30px;
 }
 
+<<<<<<< Updated upstream
 #vt {
   width: 300px;
   margin: 3rem 3rem 3rem 3rem;
@@ -1553,6 +1554,8 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   justify-self: center;
 }
 
+=======
+>>>>>>> Stashed changes
 .testimonials__quote {
   font-size: inherit;
   line-height: inherit;
@@ -1567,8 +1570,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   width: 20px;
 }
 
+<<<<<<< Updated upstream
 .testimonials__dots {
   align-self: flex-start;
 }
 
+=======
+>>>>>>> Stashed changes
 }
