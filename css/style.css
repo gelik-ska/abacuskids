@@ -7,6 +7,52 @@ html, body {
 
 }
 
+
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла*/
+
+.page_fix {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Прячем панель гугла */
+
+.skiptranslate {
+  display: none !important;
+}
+
+/* language */
+
+.language {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.language__img {
+  margin: 2px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.language__img:hover,
+.language__img_active {
+  opacity: 1;
+}
+
+
+.banner__text{
+ margin:100px;
+}
+
 .heading__title{
    font-family: 'Manrope', sans-serif;
 }
@@ -28,11 +74,19 @@ html, body {
   display: none;
 }
 
+/* content */
+
+.content {
+  text-align: center;
+  margin: auto;
+}
+
+
 .main__about {
   padding: 100px 0;
 }
 
-.main__directions {
+.main__invention {
   padding: 150px 0;
 }
 
@@ -103,6 +157,7 @@ background-size: 35%,100%;
   font-weight: 900;
   font-size: 40px;
   line-height: 130%;
+  font-family: "Manrope", sans-serif;
 }
 
 .heading--text-center {
@@ -230,6 +285,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   /* margin: 40px 0 50px; */
   background-image: url("../images/pic/luxa.org-opacity-changed-palkin2.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .header__body-inner {
@@ -500,40 +556,40 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 
-/* ============================== DIRECTIONS ============================== */
-/* ============================== DIRECTIONS ============================== */
-.directions {
+/* ============================== aboutinvention ============================== */
+/* ============================== aboutinvention ============================== */
+.aboutinvention {
   background-color: #753e7517;
 }
-.directions__inner {
+.invention__inner {
   position: relative;
 }
 
 
-.directions__heading {
+.invention__heading {
   margin-bottom: 150px;
 }
 
-.directions__list {
+.invention__list {
   display: grid;
   grid-template: repeat(2, auto) / repeat(2, 1fr);
   gap: 50px;
   grid-column-gap: 150px;
 }
 
-.directions__image-box img {
+.invention__image-box img {
   width: 100%;
   height: 100%;
 }
 
-.directions__link-content {
+.invention__link-content {
   padding: 24px;
   display: flex;
   flex-direction: column;
 }
 
 
-.directions__link-text {
+.invention__link-text {
   margin-bottom: 26px;
   font-weight: 400;
   font-size: 25px;
@@ -542,7 +598,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-top: 20px;
 }
 
-.directions__tittle {
+.invention__tittle {
   font-weight: 700;
   font-size: 30px;
   line-height: 110%;
@@ -551,7 +607,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   justify-content: center;
   margin-top: 90px;
 }
-.directions__tittle:last-child {
+.invention__tittle:last-child {
   margin-top: 230px;
   margin-right: 40px;
 }
@@ -818,7 +874,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-right: 50px;
   display: flex;
   width: 100%;
-  text-align: center;
 }
 
 .questions__form-checkbox {
@@ -839,11 +894,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .questions__form-default:checked+.questions__form-custom {
-  background: url("../images/icons/check.svg") 50% 50% no-repeat, #FF3F3A;
-  border: 1px solid #FF3F3A;
+  background: url("../images/icon/check.svg") 50% 50% no-repeat;
+  border: 1px solid #612d79c9;
 }
 .questions__form-radio:checked+span {
-  background: url("../images/icons/check.svg") 50% 50% no-repeat, #FF3F3A;
+  background: url("../images/icon/check.svg") 50% 50% no-repeat;
   color: #50B848;
 }
 .questions__form-custom {
@@ -1285,15 +1340,15 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
   /* ----------------------------------- */
-  .directions__filter-item {
+  .invention__filter-item {
     margin-right: 10px;
   }
 
-  .directions__list {
+  .invention__list {
     gap: 30px 10px;
   }
 
-  .directions__link-content {
+  .invention__link-content {
     padding: 24px 5px 5px;
   }
 
@@ -1329,7 +1384,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .directions__list {
+  .invention__list {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
 
@@ -1367,7 +1422,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     padding: 60px 0 100px;
   }
 
-  .main__directions,
+  .main__invention,
   .main__testimonials {
     padding-bottom: 100px;
   }
@@ -1401,11 +1456,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .directions__list {
+  .invention__list {
     grid-template: none;
   }
 
-  .directions__list-item--empty {
+  .invention__list-item--empty {
     display: none;
   }
 
@@ -1512,7 +1567,38 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .directions__filter-box {
+  .invention__filter-box {
     margin-bottom: 15px;
   }
 }
+
+@media (max-width: 480px) {
+  .header__body {
+    background-size: cover;
+  }
+
+  .header__title {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .header__text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header__content-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__content-btn {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+   }
