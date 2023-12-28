@@ -159,7 +159,7 @@ background-size: 35%,100%;
   margin-bottom: 8px;
   letter-spacing: 1px;
   font-weight: 700;
-  margin-left: 30px;
+  font-size: 42px;
 }
 
 .heading__title {
@@ -334,13 +334,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__title {
   font-weight: 900;
-  font-size: 35px;
+  font-size: 3.0rem;
   line-height: 100%;
   letter-spacing: 1px;
   max-width: 600px;
   margin-bottom: 30px;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #660080;
+  text-shadow: 1px 1px 4px #660080;
 
 }
 
@@ -348,7 +348,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   max-width: 400px;
   margin-bottom: 60px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 100%;
   color: #504c4cdc;
 }
@@ -478,7 +478,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 .flip-box-front h2{
-  font-family: "Barlow", Sans-serif;
   font-size: 63px;
   color: rgba(0, 0, 0, 1);
   font-weight: 400;
@@ -501,18 +500,15 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .flip-box-back p {
-  font-size: 14px;
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 21.6px;
   margin-bottom: 6px;
 }
 
-/*button*/
-
 .flip-box-back a{
   /* background-color: #DF002D; */
   color: white;
-  font-family: "Barlow", Sans-serif;
   padding: 12px 24px;
   border-radius: 10px;
   margin:0px;
@@ -559,9 +555,28 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 
+/* Стилизация списка */
+.invention_has {
+  list-style-type: none;
+  padding-left: 20px; /* Отступ слева для буллетов */
+  font-size: 1.5rem;
+}
 
+/* Стилизация каждого элемента списка */
+.invention_has li {
+  position: relative;
+  margin-bottom: 1.25rem; /* Расстояние между элементами списка */
+}
 
-
+/* Стилизация буллетов */
+.invention_has li:before {
+  content: '\2022'; /* Юникод символ для круглой точки */
+  color: #ad64b3; /* Цвет буллетов */
+  font-size: 2.5em; /* Размер буллетов */
+  position: absolute;
+  left: -30px; /* Расстояние от буллета до текста */
+  top: -15px;
+}
 
 
 /* ============================== aboutinvention ============================== */
@@ -582,7 +597,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   display: grid;
   grid-template: repeat(2, auto) / repeat(2, 1fr);
   gap: 50px;
-  grid-column-gap: 150px;
+  grid-column-gap: 200px;
 }
 
 .invention__image-box img {
@@ -591,29 +606,36 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .invention__link-content {
-  padding: 24px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
 }
 
-
 .invention__link-text {
   margin-bottom: 26px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.6rem;
   line-height: 110%;
   letter-spacing: 1px;
   margin-top: 20px;
 }
 
-.invention__tittle {
+.invention__link-text2{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin:2rem 0 1.5rem 0;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 500;
+}
+
+.invention__title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 110%;
   letter-spacing: 1px;
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin: 150px 0px -50px 0px;
 }
 .invention__tittle:last-child {
   margin-top: 230px;
@@ -817,7 +839,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 /* ============================== QUESTIONS ============================== */
 /* ============================== QUESTIONS ============================== */
 
-.questions {}
+.get_in_touch{
+  font-size: 17px;
+  font-weight: 500;
+}
 
 .questions__inner {
   display: flex;
@@ -841,8 +866,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .questions__heading {
   margin-bottom: 40px;
 }
-
-.questions__form {}
 
 .questions__form-row {
   display: flex;
@@ -943,8 +966,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   justify-content: flex-end;
 }
 
-
-.questions__button
 /* ============================== FOOTER ============================== */
 /* ============================== FOOTER ============================== */
 
@@ -1353,7 +1374,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .invention__list {
-    gap: 30px 10px;
+    gap: 20px 10px;
   }
 
   .invention__link-content {
