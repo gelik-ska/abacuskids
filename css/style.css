@@ -7,6 +7,11 @@ html, body {
 
 }
 
+.header__logo img{
+  width:200px;
+}
+
+ /*---------Accessibility----------*/
 :focus-within{
   outline-style: solid;
   outline-width: 2px; 
@@ -18,6 +23,10 @@ html, body {
   /* Ваши стили для активации при фокусе клавиатуры */
   outline: 2px solid #007bff;}
 
+ /*-------------------*/
+
+
+  /*---------translation----------*/
 
 .page {
   display: flex;
@@ -59,6 +68,19 @@ html, body {
   opacity: 1;
 }
 
+ /*-------------------*/
+
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.burger {
+  display: none;
+}
+ /*------header+banner-------------*/
 
 .banner__text{
  margin:100px;
@@ -74,28 +96,10 @@ html, body {
   overflow: hidden;
 }
 
-.container {
-  max-width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
-  height: 100%;
-}
 
-.burger {
-  display: none;
-}
 
-.main__about {
-  padding: 100px 0;
-}
 
-.main__invention {
-  padding: 150px 0;
-}
 
-.main__testimonials {
-  padding: 150px 0;
-}
 
 .testimonials__arrow:focus{
   outline-style: solid;
@@ -108,6 +112,7 @@ html, body {
 }
 
 .button {
+  background: url(/img/white-noise.png), linear-gradient(90deg, #612d79c9 0%, #b140b1cc 25%, #bb40a6c0 50%, #a840b1cc 75%, #612d79c9 100%);
   display: inline-block;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -115,7 +120,6 @@ html, body {
   padding: 0 40px;
   color: #f7f7f7;
   border-radius: 10px;
-  background: url(/img/white-noise.png), linear-gradient(90deg, #612d79c9 0%, #b140b1cc 25%, #bb40a6c0 50%, #a840b1cc 75%, #612d79c9 100%);
   background-size: auto, auto;
 background-size: 35%,100%;
   white-space: nowrap;
@@ -291,7 +295,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .header__body {
   flex-grow: 1;
   /* margin: 40px 0 50px; */
-  background-image: url("../images/pic/luxa.org-opacity-changed-palkin2.jpg");
+  background-image: url("../images/pic/banner_img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -366,9 +370,12 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   width: 650px;
 }
 
-/* ============================== ABOUT ============================== */
-/* ============================== ABOUT ============================== */
+/* ============================== ABOUT_US============================== */
 
+
+.main__about {
+  padding: 100px 0;
+}
 
 .about {
   background: #F4F5F7;
@@ -391,22 +398,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   z-index: 1;
 }
 
-/* .about__createx-content {
-  padding-top: 10%;
-    margin-top: -45px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-} */
-
 .about__title {
   margin-bottom: 120px;
   display: flex;
   justify-content: center;
 }
+
+/* ============flip-box ================= */
 
 .h2 {
   font-size: 3rem; 
@@ -424,13 +422,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .col-lg-4 {
   box-sizing: border-box;
-  flex-basis: calc(33.33% - 40px); /* Учтем отступы между карточками */
-  margin-bottom: 20px;
+  flex-basis: calc(33.33% - 20px);/* Учтем отступы между карточками */
+  margin-bottom: 40px; 
 }
 
 .flip-box {
   width: 100%;
-  height: 300px;
+  height: 400px;
   padding: 10px;
   margin: 0 15px 20px; /* Компенсация за внешние отступы контейнера и добавление отступа снизу */
   border-radius: 10px;
@@ -526,57 +524,39 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   bottom: 0;
   z-index: -1;
   border-radius: 30px;
-  background-image: url("../images/pic/photo1.png");
+  background-image: url("../images/pic/abacus_and_kid.jpg");
   background-position: center; 
   background-size: cover; /* Растягиваем фото на всю область */
   opacity: 0.8;
 }
 
 .bg2{
-  background-image: url("../images/pic/photo2.png");
+  background-image: url("../images/pic/abacus_zoomed.jpg");
   background-size: 100%;
   opacity: 0.8;
   background-size: cover; 
 }
 
 .bg3{
-  background-image: url("../images/pic/photo3.png");
-  background-size: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: 30px;
-  background-position: center; 
-  background-size: cover; 
-  opacity: 0.8;
-}
+ 
+    position: absolute;
+    top: 50%; /* Положение по вертикали на 50% */
+    left: 50%; /* Положение по горизонтали на 50% */
+    transform: translate(-50%, -50%); /* Центрирование относительно собственных размеров */
+    z-index: -1;
+    border-radius: 30px;
+    background-image: url("../images/pic/istok_audio.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+  }
+
+/* ====================== */
 
 
-/* Стилизация списка */
-.invention_has {
-  list-style-type: none;
-  padding-left: 20px; /* Отступ слева для буллетов */
-  font-size: 1.5rem;
-}
 
-/* Стилизация каждого элемента списка */
-.invention_has li {
-  position: relative;
-  margin-bottom: 1.25rem; /* Расстояние между элементами списка */
-}
-
-/* Стилизация буллетов */
-.invention_has li:before {
-  content: '\2022'; /* Юникод символ для круглой точки */
-  color: #ad64b3; /* Цвет буллетов */
-  font-size: 2.5em; /* Размер буллетов */
-  position: absolute;
-  left: -30px; /* Расстояние от буллета до текста */
-  top: -15px;
-}
 
 
 /* ============================== aboutinvention ============================== */
@@ -642,12 +622,44 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-right: 40px;
 }
 
+
+.main__invention {
+  padding: 150px 0;
+}
+
+/* Стилизация списка */
+.invention_has {
+  list-style-type: none;
+  padding-left: 20px; /* Отступ слева для буллетов */
+  font-size: 1.5rem;
+}
+
+/* Стилизация каждого элемента списка */
+.invention_has li {
+  position: relative;
+  margin-bottom: 1.25rem; /* Расстояние между элементами списка */
+}
+
+/* Стилизация буллетов */
+.invention_has li:before {
+  content: '\2022'; /* Юникод символ для круглой точки */
+  color: #ad64b3; 
+  font-size: 2.5em; 
+  position: absolute;
+  left: -30px; /* Расстояние от буллета до текста */
+  top: -15px;
+}
+
 /* ============================== TESTIMONIALS ============================== */
 /* ============================== TESTIMONIALS ============================== */
 
 .testimonials {
   background: #F4F5F7;
   position: relative;
+}
+
+.main__testimonials {
+  padding: 150px 0;
 }
 
 .testimonials::before {
@@ -721,7 +733,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-right: 20px;
 }
 
-.testimonials__info {}
+
 
 .testimonials__info-name {
   color: #1E212C;
@@ -1087,7 +1099,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   opacity: 1;
 }
 
-.footer__form {}
 
 .footer__form-items {
   background: #ffffff1f;

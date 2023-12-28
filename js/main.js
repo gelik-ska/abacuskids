@@ -275,5 +275,13 @@ whatsappLink.addEventListener('click', function() {
     window.open(hrefValue, '_blank'); // '_blank' открывает в новом окне
 });
 
-
+$(document).ready(function () {
+  // Инициализация Fancybox
+  $(".fancybox").fancybox({
+    type: "iframe", // Указываем тип контента как iframe
+    iframe: {
+      preload: false // Отключаем предварительную загрузку iframe
+    }
+  });
+});
 });
