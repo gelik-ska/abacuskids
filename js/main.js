@@ -261,4 +261,27 @@ $(document).ready(function () {
       });
     }
   }
+
+  //------------------whatsapp переадресация//-----------------------
+  // Получение ссылки по id
+var whatsappLink = document.getElementById('whatsappLink');
+
+// Добавление обработчика события click
+whatsappLink.addEventListener('click', function() {
+    // Получение значения атрибута href
+    var hrefValue = this.getAttribute('href');
+
+    // Открытие ссылки в новом окне или в том же окне
+    window.open(hrefValue, '_blank'); // '_blank' открывает в новом окне
+});
+
+$(document).ready(function () {
+  // Инициализация Fancybox
+  $(".fancybox").fancybox({
+    type: "iframe", // Указываем тип контента как iframe
+    iframe: {
+      preload: false // Отключаем предварительную загрузку iframe
+    }
+  });
+});
 });

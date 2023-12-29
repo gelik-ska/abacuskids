@@ -5,19 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=M+PLUS+Rounded+1c:wght@400;700&family=Manrope:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -35,8 +22,8 @@
       <div class="header__top">
         <div class="container">
           <div class="header__top-inner">
-            <a class="header__logo logo" href="/">
-              <img style="width: 200px;" src="images/icon/abacus_eng-logo.svg" alt="Logo">
+            <a class="header__logo logo" >
+              <img src="images/icon/abacus_eng-logo.svg" alt="AbacusKids Logo">
             </a>
             <nav class="header__nav">
               <ul class="header__nav-list">
@@ -55,7 +42,8 @@
               </ul>
             </nav>
             <div class="header__btn-box">
-              <a class="header__top-btn button" href="#questions">Свяжитесь с нами</a>
+              <a class="header__top-btn button" href="https://wa.me/79603725885" id="whatsappLink" aria-label="Свяжитесь с нами через WhatsApp">Свяжитесь с нами</a>
+
               <div class="language">
                 <img
                   src="images/lang/lang__ru.png"
@@ -79,7 +67,7 @@
           <div class="header__body-inner">
             <div class="header__main">
               <div class="header__content">
-                <a class="header__play" href="https://www.youtube.com/watch?v=gYackoTWFcE" data-fancybox>
+                <a class="header__play fancybox" href="https://youtu.be/gYackoTWFcE" target="_blank">
                   <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="26" cy="26" r="26" fill="#df606aa8" />
                     <path
@@ -90,11 +78,12 @@
                 </a>
                 <div class="banner__text"> 
                 <h1 class="header__title">
-                  <i>“AbaсusKids”</i> - электронно-звуковое устройство для детей с инвалидностью
+                  Электронное звуковое устройство <i>AbaсusKids</i>
                 </h1>
-                <p class="header__text">Мы разработали инновационное устройство для обучения детей с ОВЗ основам арифметики и ментального счета, аналога которому нет.</p>
+                <p class="header__text">для обучения детей и взрослых с ОВЗ основам арифметики и ментального счета.</p>
                 <div class="header__content-buttons">
-                  <a class="header__content-btn button button--empty" href="#aboutinvention"><span>Подробнее</span></a>
+                  <a class="header__content-btn button button--empty" href="#aboutinvention" aria-label="Подробнее о изобретении"><span>Подробнее</span></a>
+
                 </div>
               </div>
             </div>
@@ -160,7 +149,7 @@
         
                           <div class="flip-box-back">
                             <p>
-                              Производством изобретения “AbacusKids” занимается Группа
+                              Производством занимается Группа
                               компаний “Исток-Аудио” - мировой лидер в области
                               разработки, производства и реализации современных
                               технических средств реабилитации для людей с ограниченными
@@ -193,13 +182,16 @@
                 <li class="mix invention__list-item invention__list-item--management" data-order="2">
                     <div class="invention__link-content">
                       <p class="invention__link-text">
-                        
-Электронное звуковое изобретение «AbacusKids» представляет собой устройство, которое выглядит как игрушка из белого пластика с цветными косточками (зеленого, желтого и красного цветов). Устройство имеет:
--  планки с цифрами для изучения основ математики и ментального счета;
-- регулятор громкости звука для озвучивания набранного числа;
-- регулятор переключения на разные языки (русский, английский, немецкий), с возможностью включить режим “без звука”.
+                        Электронное звуковое изобретение «AbacusKids» представляет собой устройство, которое выглядит как игрушка из белого пластика с цветными косточками (зеленого, желтого и красного цветов).
+                         <p class ="invention__link-text2">Устройство имеет:</p> 
+                        <ul class="invention_has">
+                          <li>планки с цифрами для изучения основ математики и ментального счета</li>
+                          <li>регулятор громкости звука для озвучивания набранного числа</li>
+                          <li>регулятор переключения на разные языки (русский, английский, немецкий), с возможностью включить режим “без звука”</li>
+                        </ul>
                       </p>
-                      <h2 class="invention__tittle">Развивает:</h2>
+                        
+                      <h2 class="invention__title">Развивает:</h2>
                     </div>
                 </li>
                 <li class="mix invention__list-item invention__list-item--marketing" data-order="1">
@@ -209,40 +201,46 @@
               </li>
                 <li class="mix invention__list-item invention__list-item--marketing" data-order="1">
                     <div class="invention__image-box">
-                      <img src="images/pic/f9a15099-bc99-4934-8932-ddbb9b581076.png" alt="7 Rhombuses with Names, What the Device Develops in children with special needs">
+                      <img src="images/pic/develops.png" alt="7 Rhombuses with Names, What the Device Develops in children with special needs">
                     </div>    
                 </li>
                 <li class="mix invention__list-item invention__list-item--management" data-order="2">
                   <div class="invention__link-content">
                     <p class="invention__link-text">
-                      Рекомендован: 
-                      - нормотипичным детям от 3-х лет
-                      - детям от 5 лет с нарушением зрения
-                      - детям от 5 лет с нарушением слуха
-                      - детям 7 лет с ДЦП с сохранным интеллектом
-                      - детям от 5 лет с РАС
-                      - взрослым с когнитивными нарушениями, перенесшим инсульт с частичной потерей памяти, также для профилактики деменции.
-                    </p>
-                    <h2 class="invention__tittle">Выбирают:</h2>
+                      <p class ="invention__link-text2">   Рекомендован: </p>
+
+                    <ul class="invention_has">
+                      <li>нормотипичным детям от 3-х лет</li>
+                      <li>детям от 5 лет с нарушением зрения</li>
+                      <li>детям от 5 лет с нарушением слуха</li>
+                      <li>детям 7 лет с ДЦП с сохранным интеллектом</li>
+                      <li>детям от 5 лет с РАС</li>
+                      <li>взрослым с когнитивными нарушениями, перенесшим инсульт с частичной потерей памяти, также для профилактики деменции</li>
+                    </ul>
+                  </p>
+                    <h2 class="invention__title">Выбирают:</h2>
                   </div>
               </li>
               <li class="mix invention__list-item invention__list-item--management" data-order="2">
-                  <div class="invention__link-content"><p class="invention__link-text">
-                    Задачи устройства
-                    - Формирование элементарных математических представлений и развитие математических компетенций.
-                    - Овладение знаковой системой чисел, изучение основ математики.
-                    - Развитие математических видов деятельности;
-                    - Развитие логического мышления, зрительной и слуховой и тактильной памяти, сообразительности.
-                    - Развитие системного, алгоритмического и образного мышления.
-                    - Социально-коммуникативное и эмоциональное развитие.
-                    - Развитие творческого мышления.
-                    - Ознакомление с числительными на иностранных языках.
+                  <div class="invention__link-content">
+                    <p class="invention__link-text">
+                    <p class ="invention__link-text2"> Задачи устройства: </p>
+                      <ul class="invention_has">
+                    <li>Формирование элементарных математических представлений и развитие математических компетенций</li> 
+                    <li>Овладение знаковой системой чисел, изучение основ математики </li> 
+                   <li>Развитие математических видов деятельности</li> 
+                    <li>Развитие логического мышления, зрительной и слуховой и тактильной памяти, сообразительности </li> 
+                    <li>Развитие системного, алгоритмического и образного мышления </li>
+                    <li>Социально-коммуникативное и эмоциональное развитие</li>
+                    <li>Развитие творческого мышления</li>
+                    <li>Ознакомление с числительными на иностранных языках</li>
                   </p>
+                </ul>
                   </div>
               </li>
               <li class="mix invention__list-item invention__list-item--marketing" data-order="1">
                 <div class="invention__image-box">
-                  <img src="images/pic/395bb798-bef2-4c47-a342-4ff1911dc38b.png" alt="7 rhombuses with names for those who choose this device for a child with special needs.">
+                  <img src="images/pic/choose_us.png" alt="7 rhombuses with names for those who choose this device for a child with special needs.">
                 </div>    
             </li>
               </ul>
@@ -252,7 +250,7 @@
       </section>
       
 
-      <section class="main__testimonials testimonials" id="testimonials">
+      <section class="main__testimonials testimonials" id="testimonials" id="testimonials">
         <div class="container">
           <div class="testimonials__inner">
             <div class="testimonials__heading heading heading--text-center">
@@ -270,7 +268,6 @@
                     </blockquote>
                     <div class="testimonials__user">
                       <div class="testimonials__avatar">
-                        <img src="images/avatar.jpg" alt="">
                       </div>
                       <div class="testimonials__info">
                         <div class="testimonials__info-position">
@@ -294,7 +291,6 @@
                     </blockquote>
                     <div class="testimonials__user">
                       <div class="testimonials__avatar">
-                        <img src="images/avatar.jpg" alt="">
                       </div>
                       <div class="testimonials__info">
                         <div class="testimonials__info-position">
@@ -365,15 +361,16 @@
                   </div>
                 </div>
                 <div class="testimonials__slide">
-                  <div class=" video__inner">
-                    <video src="./images/video/IMG_7548.mov" width="600px" type="video/mp4" controls></video>
+                  <div class="video__inner">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/BvoggcKSI5s" frameborder="0" allowfullscreen></iframe>
                   </div>
-              </div>
-              <div class="testimonials__slide">
-                <div class=" video__inner">
-                  <video src="./images/video/IMG_7439.mov" width="600px" type="video/mp4" controls></video>
                 </div>
-            </div>
+                
+                <div class="testimonials__slide">
+                  <div class="video__inner">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/LItt_INMPzY" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
               <a class="testimonials__arrow testimonials__prev" href="#">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -399,12 +396,12 @@
         <div class="container">
           <div class="questions__inner">
             <div class="questions__img">
-              <img src="images/pic/svg-editor-image (4).svg" alt="">
+              <img src="images/pic/boy_girl_footer.svg" alt="Boy and girl sitting and smiling">
             </div>
             <div class="questions__content">
               <div class="questions__heading heading">
                 <p class="heading__subtitle">Остались вопросы?</p>
-                <h2 class="heading__title">Свяжитесь с нами</h2>
+                <p class="get_in_touch">Пожалуйста, заполните форму ниже и мы свяжемся с вами</strong>
               </div>
               <form class="questions__form">
                 <div class="questions__form-row">
@@ -452,11 +449,15 @@
                   </label>
                 </div>
                   <div class="questions__form-row">
-                    <label class="questions__form-label label-radio">
-                      <input type="radio" class="questions__form-radio" required name="entity"> Физическое лицо
-                      <input type="radio" class="questions__form-radio" required name="entity"> Юридическое лицо
-                    </label>
-                    <button type="submit" class="questions__form-btn button">Отправить</button>
+                    <div class="questions__form-label label-radio">
+                      <label>
+                        <input type="radio" class="questions__form-radio" required name="entity"> Физическое лицо
+                      </label>
+                      <label>
+                        <input type="radio" class="questions__form-radio" required name="entity"> Юридическое лицо 
+                      </label>
+                    </div>                             
+                    <button type="submit" class="questions__form-btn button" aria-label="Отправить форму">Отправить форму</button>
                   </div>
                 <div class="questions__form-row">
                   <label class="questions__checkbox-label">
