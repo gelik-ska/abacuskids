@@ -4,19 +4,21 @@
 html, body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #424551;
+  font-size: 16px;
 
 }
 
 .header__logo img{
   width:200px;
+
 }
 
  /*---------Accessibility----------*/
-:focus-within{
+/* :focus-within{
   outline-style: solid;
   outline-width: 2px; 
   outline-color: #c469c0; /* на нужный нам цвет */
-}
+} */
 
 .questions__form-radio:focus,
 .questions__form-radio:focus-visible {
@@ -46,6 +48,7 @@ html, body {
   display: none !important;
 }
 
+
 /* language */
 
 .language {
@@ -55,6 +58,7 @@ html, body {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .language__img {
@@ -83,7 +87,7 @@ html, body {
  /*------header+banner-------------*/
 
 .banner__text{
- margin:100px;
+ /* margin:100px; */
 }
 
 .heading__title{
@@ -101,14 +105,15 @@ html, body {
 
 
 
-.testimonials__arrow:focus{
+
+/* .testimonials__arrow:focus{
   outline-style: solid;
   outline-width: 2px; 
   outline-color: #c469c0; /* Цвет обводки */
-}
+} */
 
 .main__questions {
-  padding: 150px 0;
+  margin: 9rem 0;
 }
 
 .button {
@@ -116,8 +121,8 @@ html, body {
   display: inline-block;
   font-weight: 700;
   letter-spacing: 0.5px;
-  line-height: 52px;
-  padding: 0 40px;
+  line-height: 3.25rem;
+  padding: 0 2.5rem;
   color: #f7f7f7;
   border-radius: 10px;
   background-size: auto, auto;
@@ -160,15 +165,15 @@ background-size: 35%,100%;
 
 .heading__subtitle {
   line-height: 150%;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 2.6rem;
 }
 
 .heading__title {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 130%;
 }
 
@@ -178,23 +183,23 @@ background-size: 35%,100%;
 
 .index__h1 {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 150%;
   letter-spacing: 1px;
   text-transform: uppercase;
   /* display: flex;
   justify-content: center; */
   text-align: center;
-  margin: 40px 0 30px;
+  margin: 2.5rem 0 1.875rem;
 }
 
 .index__h2 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   letter-spacing: 1px;
   text-transform: none;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   /* display: flex;
   justify-content: center; */
 }
@@ -202,23 +207,47 @@ background-size: 35%,100%;
 
 .index__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: left;
   text-transform: none;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .index__text-ul {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: left;
   text-transform: none;
-  margin: 15px 0;
+  margin: 1rem 0;
 }
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.pol__main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.pol__text {
+  text-indent: 3.125rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
 /* ============================== HEADER TOP ============================== */
 /* ============================== HEADER TOP ============================== */
 
@@ -246,11 +275,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 2.5rem 0;
 }
 
 .header__logo {
-  margin-right: 70px;
+  margin-right: 4.375rem;
 }
 
 .header__nav {
@@ -262,7 +291,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__nav-item {
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 .header__nav-item:last-child {
@@ -285,7 +314,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__top-btn {
-  padding: 0 30px;
+  padding: 0 1.875rem;
 }
 
 
@@ -315,18 +344,18 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__content {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .header__play {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   color: #ffffff;
 }
 
 .header__play svg {
-  margin-right: 16px;
+  margin-right: 1rem;
   border-radius: 50%;
   transition: all .3s;
 }
@@ -350,7 +379,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__text {
   max-width: 400px;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 100%;
@@ -362,19 +391,16 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .header__content-btn {
-  margin-right: 24px;
+  margin-right: 1.5rem;
   font-weight: 900;
 }
 
-.header__img {
-  width: 650px;
-}
 
 /* ============================== ABOUT_US============================== */
 
 
 .main__about {
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 
 .about {
@@ -399,7 +425,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .about__title {
-  margin-bottom: 120px;
+  margin-bottom: 7.25rem;
   display: flex;
   justify-content: center;
 }
@@ -409,7 +435,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .h2 {
   font-size: 3rem; 
   color: rgba(0, 0, 0, 1);
-  font-weight: 400;
+  font-weight: 700;
   overflow: hidden; /* Предотвращает обрезание текста */
 }
 
@@ -423,15 +449,15 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .col-lg-4 {
   box-sizing: border-box;
   flex-basis: calc(33.33% - 20px);/* Учтем отступы между карточками */
-  margin-bottom: 40px; 
+  margin-bottom: 2.5rem; 
 }
 
 .flip-box {
   width: 100%;
   height: 400px;
-  padding: 10px;
-  margin: 0 15px 20px; /* Компенсация за внешние отступы контейнера и добавление отступа снизу */
-  border-radius: 10px;
+  padding: 0.625rem;
+  margin: 0 1rem 1.25rem; /* Компенсация за внешние отступы контейнера и добавление отступа снизу */
+  border-radius: 0.625rem;
   perspective: 1000px;
 }
 
@@ -476,7 +502,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 .flip-box-front h2{
-  font-size: 63px;
+  font-size: 4rem;
   color: rgba(0, 0, 0, 1);
   font-weight: 400;
   
@@ -493,7 +519,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   color: #000;
   transform: rotateX(180deg);
   border-radius: 30px;
-  padding: 25px 16px;
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 
@@ -507,9 +533,9 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .flip-box-back a{
   /* background-color: #DF002D; */
   color: white;
-  padding: 12px 24px;
+  padding: 10.75rem 1.25rem;
   border-radius: 10px;
-  margin:0px;
+  margin:0;
 }
 
 
@@ -570,7 +596,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 .invention__heading {
-  margin-bottom: 150px;
+  margin-bottom: 9rem;
 }
 
 .invention__list {
@@ -586,18 +612,18 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .invention__link-content {
-  padding: 50px;
+  padding: 3.125rem;
   display: flex;
   flex-direction: column;
 }
 
 .invention__link-text {
-  margin-bottom: 26px;
+  margin-bottom: 1.5rem;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 110%;
   letter-spacing: 1px;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .invention__link-text2{
@@ -607,7 +633,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   font-family: "M PLUS Rounded 1c";
   font-weight: 500;
 }
-
 .invention__title {
   font-weight: 700;
   font-size: 1.875rem;
@@ -615,11 +640,39 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   letter-spacing: 1px;
   display: flex;
   justify-content: center;
-  margin: 150px 0px -50px 0px;
+  margin: 9rem 0px 3.125rem 0px;
 }
 .invention__tittle:last-child {
-  margin-top: 230px;
-  margin-right: 40px;
+  margin-top: 14.375rem;
+  margin-right: 2.5rem;
+}
+
+
+.main__invention {
+  padding: 9rem 0;
+}
+
+/* Стилизация списка */
+.invention_has {
+  list-style-type: none;
+  padding-left: 1.25rem; /* Отступ слева для буллетов */
+  font-size: 1.5rem;
+}
+
+/* Стилизация каждого элемента списка */
+.invention_has li {
+  position: relative;
+  margin-bottom: 1.25rem; /* Расстояние между элементами списка */
+}
+
+/* Стилизация буллетов */
+.invention_has li:before {
+  content: '\2022'; /* Юникод символ для круглой точки */
+  color: #ad64b3; 
+  font-size: 2.5em; 
+  position: absolute;
+  left: -30px; /* Расстояние от буллета до текста */
+  top: -15px;
 }
 
 
@@ -659,7 +712,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .main__testimonials {
-  padding: 150px 0;
+  padding: 9rem 0;
 }
 
 .testimonials::before {
@@ -679,11 +732,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .testimonials__heading {
-  margin-bottom: 60px;
+  margin-bottom: 9.75rem;
 }
 
 .testimonials__slider-wrapper {
-  padding: 0 50px;
+  padding: 0 3.125rem;
   position: relative;
   margin-bottom: 50px;
 }
@@ -702,13 +755,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .testimonials__slide-inner {
   max-width: 810px;
   margin: 0 auto;
-  padding-left: 58px;
+  padding-left: 3.625;
 }
 
 .testimonials__quote {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
@@ -730,19 +783,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .testimonials__avatar {
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 20px;
-}
-
-
-
-.testimonials__info-name {
-  color: #1E212C;
-  font-weight: 700;
-  margin-bottom: 4px;
+  margin-right: 1.25rem;
 }
 
 .testimonials__info-position {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   color: #787A80;
 }
@@ -814,7 +859,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .testimonials__dots li {
-  margin-right: 12px;
+  margin-right: 0.75rem;
 }
 
 .testimonials__dots li:last-child {
@@ -852,7 +897,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 /* ============================== QUESTIONS ============================== */
 
 .get_in_touch{
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -872,20 +917,20 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .questions__content {
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .questions__heading {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .questions__form-row {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .questions__form-label {
-  margin-right: 25px;
+  margin-right: 1.5rem;
   flex: 1 1 auto;
 }
 
@@ -895,16 +940,16 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .questions__text-label {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .questions__form-input {
   display: block;
   border: 1px solid #D7DADD;
   border-radius: 4px;
-  padding: 13px 16px;
+  padding: 0.75rem 1rem;
   width: 100%;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   background-color: #f7f7f7;
 }
 
@@ -914,7 +959,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 .questions__checkbox-label {
-  margin-right: 50px;
+  margin-right: 3.125rem;
   display: flex;
   width: 100%;
 }
@@ -956,10 +1001,9 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .questions__form-btn {
-  width: 30%;
   align-self: center;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .label-radio {
@@ -969,8 +1013,8 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .questions__form-radio {
-  margin-right: 15px;
-  margin-left: 30px;
+  margin-right: 1rem;
+  margin-left: 1.875rem;
 }
 
 .questions__btn {
@@ -987,19 +1031,19 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .footer__top {
   background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 192, 0.7) 50%, rgba(120, 56, 150, 0.65) 100%);
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 .footer__top-inner {
   display: flex;
   justify-content: space-between;
-  margin: 0 15px;
+  margin: 0 1rem;
 }
 
 .footer__top-col {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 
 .footer__top-col:first-child {
@@ -1011,20 +1055,20 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .footer__top-text {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 80%;
-  margin-top: 16px;
+  margin-top: 1rem;
   color: #636363;
 }
 
 .footer__socials {
   display: flex;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   text-align: center;
 }
 
 .footer__socials-item {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .footer__socials-item:last-child {
@@ -1064,7 +1108,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   line-height: 150%;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   white-space: nowrap;
   pointer-events: none;
 }
@@ -1076,7 +1120,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .footer__top-list {}
 
 .footer__top-item {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .footer__top-item:last-child {
@@ -1092,112 +1136,70 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .footer__item-link svg {
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .footer__item-link:hover {
   opacity: 1;
 }
 
+.footer__nav-list {
+  margin-top: 1.875rem;
 
-.footer__form-items {
-  background: #ffffff1f;
-  border: 1px solid #ffffff33;
-  border-radius: 4px;
-  margin-bottom: 12px;
-  display: flex;
 }
 
-.footer__form-input {
-  padding: 9px 0px 9px 12px;
-  font-size: 12px;
-  line-height: 150%;
-  color: #fff;
-  width: 100%;
-  position: relative;
-  background-color: transparent;
-}
-
-.footer__form-input::placeholder {
-  color: #fff;
-  opacity: .6;
-}
-
-.footer__form-btn {
-  background: transparent;
-  padding: 10px 12px;
-}
-
-.footer__form-btn::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("../images/icons/arrow-right-mini.svg");
+.footer__nav-link {
+  line-height: 1.6;
+  white-space: nowrap;
   transition: all .3s;
+  opacity: .8;
 }
-
-.footer__form-btn:hover::before {
-  transform: scale(1.2);
-}
-
-.footer__form-desc {
-  font-size: 10px;
-  line-height: 150%;
-}
-
-.footer__bottom {
-  background-color: #292C37;
-}
-
-.footer__bottom-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.footer__copy span {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: url("../images/icons/heart-icon.svg") 0 0 / 100% 100% no-repeat;
-  vertical-align: sub;
-}
-
-.footer__go-top {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 150%;
-  opacity: 0.6;
-  text-transform: uppercase;
-  transition: all .3s;
-}
-
-.footer__go-top:hover {
+.footer__nav-link:hover {
+  color: #ffffff;
   opacity: 1;
 }
 
-.footer__nav-list {
-  margin-top: 30px;
+/* ================================== MEDIA =============================== */
+/* ================================== MEDIA =============================== */
+/* ================================== 1360 ================================ */
+@media (max-width: 1360px) {
+  .header__title {
+    font-size: 3.25rem;
+    max-width: 376px;
+  }
+  .header__content {
+    padding-left: 2rem;
+  }
 }
-
-/* ================================== MEDIA =============================== */
-/* ================================== MEDIA =============================== */
 /* ================================== 1200 ================================ */
 @media (max-width: 1200px) {
   .header__title {
-    font-size: 52px;
+    font-size: 3.25rem;
     max-width: 376px;
   }
 
-  .header__img {
-    max-width: 450px;
+  .h2 {
+    font-size: 2.3rem; 
+  }
+  .flip-box {
+    width: 90%;
+    height: 420px;
+    padding: 0;
+  }
+  .flip-box-back {
+    padding: 1rem 1rem;
+  }
+  
+  .flip-box-back p {
+    font-size: 1.2rem;
   }
 }
 
 /* ================================== 1100 ================================ */
 @media (max-width: 1100px) {
+  .heading__title {
+    font-size: 2.2rem;
+  }
   .overlay {
     position: fixed;
     top: 0;
@@ -1258,7 +1260,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .header {
-    padding-top: 92px;
+    padding-top: 5.75rem;
   }
 
   .header__top {
@@ -1281,11 +1283,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 6.25rem 0;
   }
 
   .header__logo {
-    margin: 0 0 30px 0;
+    margin: 0 0 1.875rem 0;
   }
 
   .header__nav {
@@ -1306,7 +1308,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
   .header__nav-link {
     display: block;
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   .header__btn-box {
@@ -1318,45 +1320,83 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .header__user-nav {
-    margin-bottom: 30px;
-  }
-
-  /* ----------------------------------- */
-
-  .heading__title {
-    font-size: 40px;
+    margin-bottom: 1.875rem;
   }
 
   .about__img {
     max-width: 400px;
   }
 
-
+    /* ----------------------------------- */
+  .main__about {
+    padding: 4.75rem 0;
+  }
+    
+  .row {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px; /* Компенсация за внешние отступы контейнера */
+  }
+  .flip-box {
+    width: 100%;
+    height: 420px;
+    padding: 0;
+  }
 
   /* ----------------------------------- */
-  .footer__top-inner {
+  .main__invention {
+    padding: 4.75rem 0;
+  }
+  .invention__heading {
+    margin-bottom: 6rem;
+  }
+  .invention__list {
+    gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .invention__link-content {
+    padding: 1rem;
+  }
+  .invention__link-text {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 110%;
+    letter-spacing: 1px;
+    margin-top: 1.25rem;
+  }
+  .invention__link-text2{
+    font-size: 1.3rem;
+  }
+  .invention__title {
+    font-size: 1.7rem;
+  }
+  .invention_has {
+    font-size: 1.2rem;
+  }
+  /* --------------------- */
+  .row_wrap {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
-
-  .footer__top-col {
-    margin-bottom: 30px;
+  .questions__form-btn {
+    margin-top: 1rem;
   }
-
-  .footer__top-col:first-child {
-    flex-basis: 100%;
-    max-width: none;
-    margin-bottom: 30px;
+  /* -------------- */
+  .main__testimonials {
+    padding: 4.75rem 0;
   }
-
-  .footer__top-col:last-child {
-    flex-basis: 100%;
-    max-width: none;
+  .testimonials__heading {
+    margin-bottom: 6rem;
+  }
+  .testimonials__slider-wrapper {
+    padding: 0 3.125rem;
+    position: relative;
     margin-bottom: 0px;
   }
-
-  .footer__form-items {
-    max-width: 315px;
+  .testimonials__slide {
+    padding: 25px;
   }
 }
 
@@ -1367,47 +1407,84 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     margin: 0;
   }
 
-  .header__img {
-    display: none;
-  }
-
   .header__row {
     display: none;
   }
-
   /* ----------------------------------- */
-
-
-
-  /* ----------------------------------- */
-  .invention__filter-item {
-    margin-right: 10px;
-  }
-
-  .invention__list {
-    gap: 20px 10px;
-  }
-
   .invention__link-content {
-    padding: 24px 5px 5px;
+    padding: 0;
+  } 
+  .invention__link-text {
+    margin-bottom: 0;
+    margin-top: 0;
   }
-
-
-  /* ----------------------------------- */
+  .invention__link-text2{
+    margin:2rem 0 1rem 0;
+  }
+  /* ---------------------- */
   .questions__img {
     display: none;
   }
-
-  .questions__content {
+/* ----------------------------- */
+  .footer__nav {
+    display: none;
+  }
+  .footer__socials-item svg:first-child {
+    width: 50px;
+  }
+  .footer__socials-item svg:last-child {
+    height: 30px;
+  }
+  .footer__top-text {
+    display: none;
+  }
+  
+  .footer__socials {
+    margin-top: 26px;
+  }
+  
+  .footer__socials-item {
+    margin-right: 5px;
+  }
+  .footer__top-title {
+    display: none;
+  }
+  
+  .footer__top-col:last-child .footer__top-title {
+    white-space: normal;
+  }
+  
+  .footer__top {
+    padding: 10px 0;
+  }
+  
+  .footer__top-item {
+    margin-bottom: 0;
+  }
+  
+  .footer__top-col {
+    padding: 0;
+  }
+  
+  .footer__top-inner {
     margin: 0;
-    width: 100%;
+  }
+  
+  .footer__nav-list {
+    padding-top: 1rem;
+  }
+  
+  .footer__top-list {
+    margin-top: 1rem;
+    font-size: 14px;
   }
 }
+
 
 /* ================================== 700 ================================ */
 @media (max-width: 700px) {
   .about__createx {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .about__values {
@@ -1424,9 +1501,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   /* ----------------------------------- */
-  .invention__list {
-    grid-template: repeat(3, auto) / repeat(2, 1fr);
-  }
 
   /* ----------------------------------- */
   .testimonials__slider-wrapper {
@@ -1434,7 +1508,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .testimonials__slide {
-    padding: 30px 15px;
+    padding: 1.875rem 1rem;
   }
 
   .testimonials__arrow {
@@ -1445,41 +1519,41 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 /* ================================== 550 ================================ */
 @media (max-width: 550px) {
   .heading {
-    margin-bottom: 30px;
+    margin-bottom: 31.875rem;
   }
 
   .heading__subtitle {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 0;
   }
 
   .heading__title {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 
   /* ----------------------------------- */
   .main__about {
-    padding: 60px 0 100px;
+    padding: 3.75rem 0 16.25rem;
   }
 
   .main__invention,
   .main__testimonials {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
   }
 
   .main__questions {
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 
   /* ----------------------------------- */
 
   .about__text {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .about__paragraph {
     font-size: inherit;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   .about__btn-box {
@@ -1488,11 +1562,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .about__btn {
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 1.875 0;
   }
 
   .about__btn:last-child {
-    margin: 0px;
+    margin: 0;
   }
 
   /* ----------------------------------- */
@@ -1506,11 +1580,11 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
   /* ----------------------------------- */
   .testimonials__slider-wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
 
   .testimonials__slide-inner {
-    padding-left: 30px;
+    padding-left: 1.875rem;
   }
 
   .testimonials__quote {
@@ -1533,8 +1607,8 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .questions__form-label {
-    font-size: 14px;
-    margin: 0px 0px 24px 0px;
+    font-size: 0.875rem;
+    margin: 0px 0px 1.5rem 0px;
   }
 
   .questions__form-label:last-child {
@@ -1546,12 +1620,12 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .questions__text-label {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .questions__checkbox-label {
-    font-size: 14px;
-    margin: 0px 0px 24px 0px;
+    font-size: 0.875rem;
+    margin: 0 0 1.5rem 0;
   }
 
   /* ----------------------------------- */
@@ -1565,21 +1639,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .footer__top-list {
-    margin-top: 12px;
+    margin-top: 0.75rem;
     display: none;
   }
 
-  .footer__bottom-inner {
-    flex-direction: column-reverse;
-  }
-
-  .footer__copy {
-    text-align: center;
-  }
-
-  .footer__go-top {
-    margin-bottom: 15px;
-  }
 }
 
 /* ================================== 450 ================================ */
@@ -1593,7 +1656,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
   .header__title {
     max-width: none;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .header__content-buttons {
@@ -1602,13 +1665,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .header__content-btn {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 1.875rem 0px;
     text-align: center;
   }
 
   /* ----------------------------------- */
   .invention__filter-box {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -1618,18 +1681,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .header__title {
-    font-size: 24px;
+    font-size: 1.5rem;
     max-width: 100%;
   }
 
   .header__text {
     max-width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .header__img {
-    width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 31.875rem;
   }
 
   .header__content-buttons {
@@ -1639,6 +1697,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
   .header__content-btn {
     margin-right: 0;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
    }
