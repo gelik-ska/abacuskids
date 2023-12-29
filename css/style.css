@@ -648,6 +648,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   color: #787A80;
 }
 
+<<<<<<< HEAD
 .video__inner {
   display: flex;
   justify-content: center;
@@ -658,6 +659,8 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   border-radius: 20px;
 }
 
+=======
+>>>>>>> 6e4791164a94fa2d4b006c98a61b58ee1b360e65
 .testimonials__arrow {
   position: absolute;
   top: 0;
@@ -1537,6 +1540,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   .directions__filter-box {
     margin-bottom: 15px;
   }
+<<<<<<< HEAD
 /* ----------------------------------- */
 .testimonials__slider-wrapper {
   margin-bottom: 15px;
@@ -1589,4 +1593,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 6e4791164a94fa2d4b006c98a61b58ee1b360e65
 }
