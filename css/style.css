@@ -103,11 +103,6 @@ html, body {
 
 
 
-/* .testimonials__arrow:focus{
-  outline-style: solid;
-  outline-width: 2px; 
-  outline-color: #c469c0; /* Цвет обводки */
-} */
 
 .main__questions {
   margin: 9rem 0;
@@ -131,6 +126,7 @@ background-size: 35%,100%;
 .button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 24px #c553c5;
+  cursor: pointer;
 }
 
 .button--empty {
@@ -279,7 +275,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-right: 4.375rem;
 }
 
-.header__nav {
+.header__nav, .footer__nav {
   margin-right: auto;
 }
 
@@ -303,6 +299,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__nav-link:hover {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .header__btn-box {
@@ -692,7 +689,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   left: 50%;
   transform: translate(-44.9%, -55.4%);
   background: url("../images/decor/testi-bg.svg") 0 0 / 100% no-repeat;
-  width: 1971px;
+  width: 100%;
   height: 816px;
 }
 
@@ -1187,10 +1184,14 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     opacity: 1;
   }
 
+  .header {
+    padding-top: 0;
+}
+
   .burger {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 15px;
     z-index: 150;
     height: 60px;
     width: 60px;
@@ -1200,6 +1201,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     align-items: center;
     justify-content: center;
     transition: all .3s;
+    z-index: 100;
   }
 
   .burger--follow {
@@ -1228,9 +1230,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
     border-radius: 3px;
   }
 
-  .header {
-    padding-top: 5.75rem;
-  }
 
   .header__top {
     position: fixed;
@@ -1374,10 +1373,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 @media (max-width: 900px) {
   .header__content {
     margin: 0;
-  }
-
-  .header__row {
-    display: none;
   }
   /* ----------------------------------- */
   .invention__link-content {
