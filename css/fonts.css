@@ -4,9 +4,9 @@
   font-style: normal;
   font-display: swap;
   src: local("M PLUS Rounded 1c"),
-       url("../fonts/RoundedMplus1c-Bold.woff2") format('woff2'),
-       url("../fonts/RoundedMplus1c-Bold.woff") format('woff'),
-       url("../fonts/RoundedMplus1c-Bold.eot") format('eot');
+    url("../fonts/RoundedMplus1c-Bold.woff2") format("woff2"),
+    url("../fonts/RoundedMplus1c-Bold.woff") format("woff"),
+    url("../fonts/RoundedMplus1c-Bold.eot") format("eot");
   font-display: swap;
 }
 @font-face {
@@ -15,28 +15,26 @@
   font-style: normal;
   font-display: swap;
   src: local("M PLUS Rounded 1c"),
-       url("../fonts/RoundedMplus1c-Regular.woff2") format('woff2'),
-       url("../fonts/RoundedMplus1c-Regular.woff") format('woff'),
-       url("../fonts/RoundedMplus1c-Regular.eot") format('eot');
+    url("../fonts/RoundedMplus1c-Regular.woff2") format("woff2"),
+    url("../fonts/RoundedMplus1c-Regular.woff") format("woff"),
+    url("../fonts/RoundedMplus1c-Regular.eot") format("eot");
 }
 @font-face {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Manrope"),
-       url("../fonts/Manrope-Semibold.woff2") format('woff2'),
-       url("../fonts/Manrope-Semibold.woff") format('woff'),
-       url("../fonts/Manrope-Semibold.eot") format('eot');
+  src: local("Manrope"), url("../fonts/Manrope-Semibold.woff2") format("woff2"),
+    url("../fonts/Manrope-Semibold.woff") format("woff"),
+    url("../fonts/Manrope-Semibold.eot") format("eot");
 }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Manrope"),
-       url("../fonts/Manrope-Regular.woff2") format('woff2'),
-       url("../fonts/Manrope-Regular.woff") format('woff'),
-       url("../fonts/Manrope-Regular.woff2") format('eot');
+  src: local("Manrope"), url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff"),
+    url("../fonts/Manrope-Regular.woff2") format("eot");
 }
