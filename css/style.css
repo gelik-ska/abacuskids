@@ -7,6 +7,26 @@ html, body {
 
 }
 
+.header__logo img{
+  width:200px;
+}
+
+ /*---------Accessibility----------*/
+:focus-within{
+  outline-style: solid;
+  outline-width: 2px; 
+  outline-color: #c469c0; /* на нужный нам цвет */
+}
+
+.questions__form-radio:focus,
+.questions__form-radio:focus-visible {
+  /* Ваши стили для активации при фокусе клавиатуры */
+  outline: 2px solid #007bff;}
+
+ /*-------------------*/
+
+
+  /*---------translation----------*/
 
 .page {
   display: flex;
@@ -48,6 +68,19 @@ html, body {
   opacity: 1;
 }
 
+ /*-------------------*/
+
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.burger {
+  display: none;
+}
+ /*------header+banner-------------*/
 
 .banner__text{
  margin:100px;
@@ -63,35 +96,15 @@ html, body {
   overflow: hidden;
 }
 
-.container {
-  max-width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
-  height: 100%;
-}
-
-.burger {
-  display: none;
-}
-
-/* content */
-
-.content {
-  text-align: center;
-  margin: auto;
-}
 
 
-.main__about {
-  padding: 100px 0;
-}
 
-.main__invention {
-  padding: 150px 0;
-}
 
-.main__testimonials {
-  padding: 150px 0;
+
+.testimonials__arrow:focus{
+  outline-style: solid;
+  outline-width: 2px; 
+  outline-color: #c469c0; /* Цвет обводки */
 }
 
 .main__questions {
@@ -99,6 +112,7 @@ html, body {
 }
 
 .button {
+  background: url(/img/white-noise.png), linear-gradient(90deg, #612d79c9 0%, #b140b1cc 25%, #bb40a6c0 50%, #a840b1cc 75%, #612d79c9 100%);
   display: inline-block;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -106,7 +120,6 @@ html, body {
   padding: 0 40px;
   color: #f7f7f7;
   border-radius: 10px;
-  background: url(/img/white-noise.png), linear-gradient(90deg, #612d79c9 0%, #b140b1cc 25%, #bb40a6c0 50%, #a840b1cc 75%, #612d79c9 100%);
   background-size: auto, auto;
 background-size: 35%,100%;
   white-space: nowrap;
@@ -150,14 +163,13 @@ background-size: 35%,100%;
   margin-bottom: 8px;
   letter-spacing: 1px;
   font-weight: 700;
-  margin-left: 30px;
+  font-size: 42px;
 }
 
 .heading__title {
   font-weight: 900;
   font-size: 40px;
   line-height: 130%;
-  font-family: "Manrope", sans-serif;
 }
 
 .heading--text-center {
@@ -283,7 +295,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .header__body {
   flex-grow: 1;
   /* margin: 40px 0 50px; */
-  background-image: url("../images/pic/luxa.org-opacity-changed-palkin2.jpg");
+  background-image: url("../images/pic/banner_img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -326,13 +338,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .header__title {
   font-weight: 900;
-  font-size: 35px;
+  font-size: 3.0rem;
   line-height: 100%;
   letter-spacing: 1px;
   max-width: 600px;
   margin-bottom: 30px;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #660080;
+  text-shadow: 1px 1px 4px #660080;
 
 }
 
@@ -340,7 +352,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   max-width: 400px;
   margin-bottom: 60px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 100%;
   color: #504c4cdc;
 }
@@ -358,9 +370,12 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   width: 650px;
 }
 
-/* ============================== ABOUT ============================== */
-/* ============================== ABOUT ============================== */
+/* ============================== ABOUT_US============================== */
 
+
+.main__about {
+  padding: 100px 0;
+}
 
 .about {
   background: #F4F5F7;
@@ -383,22 +398,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   z-index: 1;
 }
 
-/* .about__createx-content {
-  padding-top: 10%;
-    margin-top: -45px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-} */
-
 .about__title {
   margin-bottom: 120px;
   display: flex;
   justify-content: center;
 }
+
+/* ============flip-box ================= */
 
 .h2 {
   font-size: 3rem; 
@@ -416,13 +422,13 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .col-lg-4 {
   box-sizing: border-box;
-  flex-basis: calc(33.33% - 40px); /* Учтем отступы между карточками */
-  margin-bottom: 20px;
+  flex-basis: calc(33.33% - 20px);/* Учтем отступы между карточками */
+  margin-bottom: 40px; 
 }
 
 .flip-box {
   width: 100%;
-  height: 300px;
+  height: 400px;
   padding: 10px;
   margin: 0 15px 20px; /* Компенсация за внешние отступы контейнера и добавление отступа снизу */
   border-radius: 10px;
@@ -470,7 +476,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 
 .flip-box-front h2{
-  font-family: "Barlow", Sans-serif;
   font-size: 63px;
   color: rgba(0, 0, 0, 1);
   font-weight: 400;
@@ -493,18 +498,15 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .flip-box-back p {
-  font-size: 14px;
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 21.6px;
   margin-bottom: 6px;
 }
 
-/*button*/
-
 .flip-box-back a{
   /* background-color: #DF002D; */
   color: white;
-  font-family: "Barlow", Sans-serif;
   padding: 12px 24px;
   border-radius: 10px;
   margin:0px;
@@ -522,35 +524,36 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   bottom: 0;
   z-index: -1;
   border-radius: 30px;
-  background-image: url("../images/pic/photo1.png");
+  background-image: url("../images/pic/abacus_and_kid.jpg");
   background-position: center; 
   background-size: cover; /* Растягиваем фото на всю область */
   opacity: 0.8;
 }
 
 .bg2{
-  background-image: url("../images/pic/photo2.png");
+  background-image: url("../images/pic/abacus_zoomed.jpg");
   background-size: 100%;
   opacity: 0.8;
   background-size: cover; 
 }
 
 .bg3{
-  background-image: url("../images/pic/photo3.png");
-  background-size: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: 30px;
-  background-position: center; 
-  background-size: cover; 
-  opacity: 0.8;
-}
+ 
+    position: absolute;
+    top: 50%; /* Положение по вертикали на 50% */
+    left: 50%; /* Положение по горизонтали на 50% */
+    transform: translate(-50%, -50%); /* Центрирование относительно собственных размеров */
+    z-index: -1;
+    border-radius: 30px;
+    background-image: url("../images/pic/istok_audio.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+  }
 
-
+/* ====================== */
 
 
 
@@ -574,7 +577,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   display: grid;
   grid-template: repeat(2, auto) / repeat(2, 1fr);
   gap: 50px;
-  grid-column-gap: 150px;
+  grid-column-gap: 200px;
 }
 
 .invention__image-box img {
@@ -583,33 +586,68 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 }
 
 .invention__link-content {
-  padding: 24px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
 }
 
-
 .invention__link-text {
   margin-bottom: 26px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1.6rem;
   line-height: 110%;
   letter-spacing: 1px;
   margin-top: 20px;
 }
 
-.invention__tittle {
+.invention__link-text2{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin:2rem 0 1.5rem 0;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 500;
+}
+
+.invention__title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 110%;
   letter-spacing: 1px;
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin: 150px 0px -50px 0px;
 }
 .invention__tittle:last-child {
   margin-top: 230px;
   margin-right: 40px;
+}
+
+
+.main__invention {
+  padding: 150px 0;
+}
+
+/* Стилизация списка */
+.invention_has {
+  list-style-type: none;
+  padding-left: 20px; /* Отступ слева для буллетов */
+  font-size: 1.5rem;
+}
+
+/* Стилизация каждого элемента списка */
+.invention_has li {
+  position: relative;
+  margin-bottom: 1.25rem; /* Расстояние между элементами списка */
+}
+
+/* Стилизация буллетов */
+.invention_has li:before {
+  content: '\2022'; /* Юникод символ для круглой точки */
+  color: #ad64b3; 
+  font-size: 2.5em; 
+  position: absolute;
+  left: -30px; /* Расстояние от буллета до текста */
+  top: -15px;
 }
 
 /* ============================== TESTIMONIALS ============================== */
@@ -618,6 +656,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .testimonials {
   background: #F4F5F7;
   position: relative;
+}
+
+.main__testimonials {
+  padding: 150px 0;
 }
 
 .testimonials::before {
@@ -691,7 +733,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   margin-right: 20px;
 }
 
-.testimonials__info {}
+
 
 .testimonials__info-name {
   color: #1E212C;
@@ -726,7 +768,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   top: 50%;
   width: 48px;
   height: 48px;
-  background-color: #fd5031;
+  background-color:#c469c0;
   border-radius: 50%;
   z-index: -1;
   transition: all .3s;
@@ -809,7 +851,10 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 /* ============================== QUESTIONS ============================== */
 /* ============================== QUESTIONS ============================== */
 
-.questions {}
+.get_in_touch{
+  font-size: 17px;
+  font-weight: 500;
+}
 
 .questions__inner {
   display: flex;
@@ -833,8 +878,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .questions__heading {
   margin-bottom: 40px;
 }
-
-.questions__form {}
 
 .questions__form-row {
   display: flex;
@@ -935,8 +978,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   justify-content: flex-end;
 }
 
-
-.questions__button
 /* ============================== FOOTER ============================== */
 /* ============================== FOOTER ============================== */
 
@@ -1058,7 +1099,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   opacity: 1;
 }
 
-.footer__form {}
 
 .footer__form-items {
   background: #ffffff1f;
@@ -1345,7 +1385,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   }
 
   .invention__list {
-    gap: 30px 10px;
+    gap: 20px 10px;
   }
 
   .invention__link-content {
