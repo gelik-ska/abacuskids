@@ -85,7 +85,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".header__nav-list a, .header__top-btn, .footer__go-top").on(
+  $(".header__nav-list a, .header__top-btn, ").on(
     "click",
     function (e) {
       e.preventDefault();
@@ -285,3 +285,4 @@ $(document).ready(function () {
   });
 });
 });
+
