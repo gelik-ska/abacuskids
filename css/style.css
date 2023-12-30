@@ -10,6 +10,7 @@ html, body {
 
 .header__logo img{
   width:200px;
+
 }
 
  /*---------Accessibility----------*/
@@ -46,6 +47,7 @@ html, body {
 .skiptranslate {
   display: none !important;
 }
+
 
 /* language */
 
@@ -97,6 +99,7 @@ html, body {
   width: 100%;
   overflow: hidden;
 }
+
 
 
 
@@ -627,7 +630,6 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   font-family: "M PLUS Rounded 1c";
   font-weight: 500;
 }
-
 .invention__title {
   font-weight: 700;
   font-size: 1.875rem;
@@ -651,6 +653,34 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 .invention_has {
   list-style-type: none;
   padding-left: 1.25rem; /* Отступ слева для буллетов */
+  font-size: 1.5rem;
+}
+
+/* Стилизация каждого элемента списка */
+.invention_has li {
+  position: relative;
+  margin-bottom: 1.25rem; /* Расстояние между элементами списка */
+}
+
+/* Стилизация буллетов */
+.invention_has li:before {
+  content: '\2022'; /* Юникод символ для круглой точки */
+  color: #ad64b3; 
+  font-size: 2.5em; 
+  position: absolute;
+  left: -30px; /* Расстояние от буллета до текста */
+  top: -15px;
+}
+
+
+.main__invention {
+  padding: 150px 0;
+}
+
+/* Стилизация списка */
+.invention_has {
+  list-style-type: none;
+  padding-left: 20px; /* Отступ слева для буллетов */
   font-size: 1.5rem;
 }
 
@@ -1112,6 +1142,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
 
 .footer__nav-list {
   margin-top: 1.875rem;
+
 }
 
 .footer__nav-link {

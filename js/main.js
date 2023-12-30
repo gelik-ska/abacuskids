@@ -53,6 +53,7 @@ $(document).ready(function () {
     dots: true,
     appendDots: $(".testimonials__dots"),
     waitForAnimate: false,
+    adaptiveHeight: true,
     // responsive:
     //   [
     //     {
