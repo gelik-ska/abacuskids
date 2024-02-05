@@ -866,8 +866,9 @@ body {
 }
 
 .questions__img img {
-  height: 100%;
-  width: 100%;
+  height: 294px;
+  width: 388px;
+  margin-left: -2rem;
 }
 
 .questions__content {
@@ -1117,6 +1118,13 @@ body {
   opacity: 1;
 }
 
+.logo-img{
+  display: none;
+}
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
 /* ================================== MEDIA =============================== */
 /* ================================== MEDIA =============================== */
 /* ================================== 1360 ================================ */
@@ -1162,6 +1170,10 @@ body {
       rgba(255, 137, 192, 0.7) 50%,
       rgba(120, 56, 150, 0.65) 100%
     );
+  }
+
+  .logo-img{
+    display: none;
   }
 
   .header__wrapper {
@@ -1483,9 +1495,27 @@ body {
     font-size: 0.875rem;
     margin: 0;
   }
+.heading__subtitle {
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
   .header__top-btn {
-    line-height: 2.25rem;
-    padding: 0 1.5rem;
+    padding: 0 2rem 0 1rem;
+/* Скрыть текстовую часть кнопки */
+text-indent: -9999px;
+overflow: hidden;
+width: 100%;
+height: 100%;
+background: url('/images/pic/whatsapp.png') no-repeat center center;
+background-size: cover;
+  }
+
+
+  .logo-img {
+    display: inline-block;
   }
 
   .header__logo {
@@ -1500,6 +1530,7 @@ body {
     font-size: 1.5rem;
   }
 
+  .burger{transform: translate(5%, 15%)}
   /* ----------------------------------- */
   .main__about {
     padding: 3.75rem 0;
@@ -1513,6 +1544,16 @@ body {
   .main__questions {
     padding-bottom: 2.5rem;
     margin: 2rem 0;
+  }
+
+  .header__content-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__content-btn {
+    margin-right: 20rem;
+    margin-bottom: 0.75rem;
   }
 
   /* ----------------------------------- */
@@ -1586,7 +1627,7 @@ body {
   }
 
   .questions__form-input {
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
 
   .questions__text-label {
@@ -1612,6 +1653,14 @@ body {
     margin-top: 0.75rem;
     display: none;
   }
+
+  .footer__socials-item svg:last-child {
+    height: 42px;
+}
+
+.footer__socials {
+  margin-left: 25rem;
+  margin-top: -43px;
 }
 
 /* ================================== 450 ================================ */
@@ -1621,6 +1670,8 @@ body {
     left: 0;
   }
 
+
+
   /* ----------------------------------- */
 
   .header__title {
@@ -1628,9 +1679,12 @@ body {
     font-size: 2.5rem;
   }
 
-  .header__content-buttons {
-    flex-direction: column;
-    align-items: flex-start;
+  .heading__subtitle {
+    line-height: 150%;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 2.2rem;
   }
 
   .header__content-btn {
@@ -1642,12 +1696,38 @@ body {
   .invention__filter-box {
     margin-bottom: 1rem;
   }
+
+  /* ----------------------------------- */
+  .footer__top-inner {
+    flex-direction: column;
+  }
+
+  .footer__top-title--slide {
+    pointer-events: auto;
+    margin: 0;
+  }
+
+  .footer__top-list {
+    margin-top: 0.75rem;
+    display: none;
+  }
+
+  .footer__socials-item svg:last-child {
+    height: 42px;
+}
+
+.footer__socials {
+  margin-left: 22rem;
+}
+
 }
 
 @media (max-width: 480px) {
   .header__body {
     background-size: cover;
+    height: 80vh;
   }
+
 
   .header__title {
     font-size: 1.5rem;
@@ -1668,4 +1748,15 @@ body {
     margin-right: 0;
     margin-bottom: 0.75rem;
   }
+}
+.main__questions {
+  margin-bottom: -0.5rem;
+}
+.heading__subtitle {
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
 }
