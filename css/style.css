@@ -286,7 +286,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
-  color: #414141;
+  color: rgb(57, 55, 55);
 }
 
 .header__content-buttons {
@@ -923,7 +923,7 @@ background: linear-gradient(90deg, rgba(120, 56, 150, 0.65) 0%, rgba(255, 137, 1
   font-size: 14px;
   line-height: 80%;
   margin-top: 16px;
-  color: #636363;
+  color: rgb(64, 61, 61);
 }
 
 .footer__socials {
