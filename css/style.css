@@ -276,7 +276,8 @@ body {
   margin-right: 4.375rem;
 }
 
-.header__nav, .footer__nav {
+.header__nav,
+.footer__nav {
   margin-right: auto;
 }
 
@@ -844,9 +845,17 @@ body {
   transition: all 0.3s;
 }
 
-.video__inner {
+.video__inner-box {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
+}
+
+.video__inner {
+  margin-left: 20px;
+}
+.video__inner:first-child {
+  margin-left: 0;
 }
 
 /* ============================== QUESTIONS ============================== */
@@ -1120,7 +1129,7 @@ body {
   opacity: 1;
 }
 
-.logo-img{
+.logo-img {
   display: none;
 }
 .logo-img {
@@ -1161,6 +1170,19 @@ body {
   .flip-box-back p {
     font-size: 1.2rem;
   }
+
+  .video__inner-box {
+    display: block;
+  }
+
+  .video__inner {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .video__inner:first-child {
+    margin-top: 0;
+  }
 }
 
 /* ================================== 1100 ================================ */
@@ -1174,7 +1196,7 @@ body {
     );
   }
 
-  .logo-img{
+  .logo-img {
     display: none;
   }
 
@@ -1205,7 +1227,7 @@ body {
 
   .header {
     padding-top: 0;
-}
+  }
 
   .burger {
     position: fixed;
@@ -1497,24 +1519,23 @@ body {
     font-size: 0.875rem;
     margin: 0;
   }
-.heading__subtitle {
-  line-height: 150%;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 2.2rem;
-}
+  .heading__subtitle {
+    line-height: 150%;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 2.2rem;
+  }
   .header__top-btn {
     padding: 0 2rem 0 1rem;
-/* Скрыть текстовую часть кнопки */
-text-indent: -9999px;
-overflow: hidden;
-width: 100%;
-height: 100%;
-background: url('/images/pic/whatsapp.png') no-repeat center center;
-background-size: cover;
+    /* Скрыть текстовую часть кнопки */
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url("/images/pic/whatsapp.png") no-repeat center center;
+    background-size: cover;
   }
-
 
   .logo-img {
     display: inline-block;
@@ -1532,7 +1553,9 @@ background-size: cover;
     font-size: 1.5rem;
   }
 
-  .burger{transform: translate(5%, 15%)}
+  .burger {
+    transform: translate(5%, 15%);
+  }
   /* ----------------------------------- */
   .main__about {
     padding: 3.75rem 0;
@@ -1658,29 +1681,98 @@ background-size: cover;
 
   .footer__socials-item svg:last-child {
     height: 42px;
-}
-
-.footer__socials {
-  margin-left: 25rem;
-  margin-top: -43px;
-}
-
-/* ================================== 450 ================================ */
-@media (max-width: 450px) {
-  .header__top {
-    min-width: none;
-    left: 0;
   }
 
-
-
-  /* ----------------------------------- */
-
-  .header__title {
-    max-width: none;
-    font-size: 2.5rem;
+  .footer__socials {
+    margin-left: 25rem;
+    margin-top: -43px;
   }
 
+  /* ================================== 450 ================================ */
+  @media (max-width: 450px) {
+    .header__top {
+      min-width: none;
+      left: 0;
+    }
+
+    /* ----------------------------------- */
+
+    .header__title {
+      max-width: none;
+      font-size: 2.5rem;
+    }
+
+    .heading__subtitle {
+      line-height: 150%;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+
+    .header__content-btn {
+      margin: 0px 0px 1.875rem 0px;
+      text-align: center;
+    }
+
+    /* ----------------------------------- */
+    .invention__filter-box {
+      margin-bottom: 1rem;
+    }
+
+    /* ----------------------------------- */
+    .footer__top-inner {
+      flex-direction: column;
+    }
+
+    .footer__top-title--slide {
+      pointer-events: auto;
+      margin: 0;
+    }
+
+    .footer__top-list {
+      margin-top: 0.75rem;
+      display: none;
+    }
+
+    .footer__socials-item svg:last-child {
+      height: 42px;
+    }
+
+    .footer__socials {
+      margin-left: 22rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header__body {
+      background-size: cover;
+      height: 80vh;
+    }
+
+    .header__title {
+      font-size: 1.5rem;
+      max-width: 100%;
+    }
+
+    .header__text {
+      max-width: 100%;
+      margin-bottom: 31.875rem;
+    }
+
+    .header__content-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header__content-btn {
+      margin-right: 0;
+      margin-bottom: 0.75rem;
+    }
+  }
+  .main__questions {
+    margin-bottom: -0.5rem;
+  }
   .heading__subtitle {
     line-height: 150%;
     margin-bottom: 0.5rem;
@@ -1688,77 +1780,4 @@ background-size: cover;
     font-weight: 700;
     font-size: 2.2rem;
   }
-
-  .header__content-btn {
-    margin: 0px 0px 1.875rem 0px;
-    text-align: center;
-  }
-
-  /* ----------------------------------- */
-  .invention__filter-box {
-    margin-bottom: 1rem;
-  }
-
-  /* ----------------------------------- */
-  .footer__top-inner {
-    flex-direction: column;
-  }
-
-  .footer__top-title--slide {
-    pointer-events: auto;
-    margin: 0;
-  }
-
-  .footer__top-list {
-    margin-top: 0.75rem;
-    display: none;
-  }
-
-  .footer__socials-item svg:last-child {
-    height: 42px;
-}
-
-.footer__socials {
-  margin-left: 22rem;
-}
-
-}
-
-@media (max-width: 480px) {
-  .header__body {
-    background-size: cover;
-    height: 80vh;
-  }
-
-
-  .header__title {
-    font-size: 1.5rem;
-    max-width: 100%;
-  }
-
-  .header__text {
-    max-width: 100%;
-    margin-bottom: 31.875rem;
-  }
-
-  .header__content-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header__content-btn {
-    margin-right: 0;
-    margin-bottom: 0.75rem;
-  }
-}
-.main__questions {
-  margin-bottom: -0.5rem;
-}
-.heading__subtitle {
-  line-height: 150%;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 2.2rem;
-}
 }
